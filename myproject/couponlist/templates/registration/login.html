@@ -5,9 +5,10 @@
   <div class="jumbotron">
 
     <h2>Please Login: </h2>
-    <h3>(Must be SuperUser, please check admin for issues.)</h3>
+    <h4>Must be a part of the coupon Team in order to post coupons</h4>
+    <h4>Please contact admin to issue accounts</h4>
     {% if form.errors %}
-        <p>Your username and password didn't match.Please try again!</p>
+        <p class="red">Your username and password didn't match.Please try again!</p>
     {% endif %}
 
     <form method="POST" action="{% url 'login' %}">
@@ -18,7 +19,10 @@
         <input type="hidden" name="next" value="{{ next }}" />
     </form>
   </div>
-  <p>Sample Account:</p>
-  <p>username: coupon</p>
-  <p>password: post12345</p>
+
+  <div class="gradient-border box">
+  <pre><strong>Please try our Sample Account:</strong></pre>
+    <pre>    <strong>Username:</strong> coupon</pre>
+    <pre>    <strong>Password:</strong> post12345</pre>
+  </div>
 {% endblock %}
