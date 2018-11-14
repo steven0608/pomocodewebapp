@@ -23,9 +23,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'couponlist/templates/couponlist')
 SECRET_KEY = '$i0fo^-5(eejdidc&+lq^si)$xwzxz*nq_yzys(8d(-xdy3)q^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['getacoupon.baq34vev2s.us-east-1.elasticbeanstalk.com']
 
 
 # Application definition
